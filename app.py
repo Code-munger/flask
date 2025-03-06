@@ -5,6 +5,12 @@ import numpy as np
 
 app = Flask(__name__)
 
+app = Flask(__name__)
+from flask import Flask
+from flask_cors import CORS  # Add this line
+app = Flask(__name__)
+CORS(app)  # Add this line immediately after defining 'app'
+
 # API Keys (Enter your own API keys here)
 OPENWEATHER_API_KEY = '5c7b9b0cef3bf8c09d394fa64a22ee7a'
 NOAA_API_KEY = 'KKKViuNUzPggYQhPLahwbAYgRyVSEdvY'
